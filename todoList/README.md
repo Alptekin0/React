@@ -1,45 +1,39 @@
 # React + Vite
-
+<br/> <br/> 
 ## Todo App (React)
 
 Bu proje, React kullanılarak geliştirilmiş basit bir Todo Uygulamasıdır.  
-Kullanıcılar yeni görevler ekleyebilir, mevcut görevleri güncelleyebilir ve silebilir.  
-  
+Kullanıcılar yeni görevler ekleyebilir, mevcut görevleri güncelleyebilir ve silebilir.
+<br/> <br/> 
 ## 🚀 Özellikler
 
 - ✅ Yeni todo ekleme  
 - 📝 Mevcut todo güncelleme  
 - 🗑️ Todo silme  
-- 🎨 Basit ve şık arayüz (React Icons ile ikon desteği)  
-  
+- 🎨 Basit ve şık arayüz (React Icons ile ikon desteği)
+<br/> <br/> 
 ## 🛠️ Kullanılan Teknolojiler
 
 - React  
-- React Icons  
-  
+- React Icons
+<br/> <br/> 
 ## 📌 Kullanım
 
-Input alanına yeni bir görev yaz → EKLE butonuna bas.
-Görevin yanındaki ✏️ ikonuna tıklayarak güncelle.
-Görevin yanındaki 🗑️ ikonuna tıklayarak sil.
-
-📸 Ekran Görüntüsü
+1. Input alanına yeni bir görev yaz → **EKLE** butonuna bas.  
+2. Görevin yanındaki ✏️ ikonuna tıklayarak güncelle.  
+3. Görevin yanındaki 🗑️ ikonuna tıklayarak sil.
+<br/> <br/> 
+## 📸 Ekran Görüntüsü
 
 ![Todo App Screenshot](./screenshot.png)
-
-
+<br/> <br/> 
 ## 📂 Kurulum
 
-Projeyi kendi bilgisayarında çalıştırmak için:
+1. Projeyi klonla:  
+```bash
+git clone https://github.com/Alptekin0/React.git
 
-# 1. Projeyi klonla
-git clone https://github.com/kullaniciAdin/todo-app.git
-
-# 2. Proje klasörüne gir
 cd todoList
-
-# 3. Gerekli paketleri yükle
 npm install
-
-# 4. Uygulamayı başlat
 npm run dev
+
