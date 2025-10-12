@@ -1,16 +1,65 @@
-# React + Vite
+# Formik Register Form
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Bu proje, React, Formik ve Yup kullanarak basit bir kayıt formu örneğidir. Form, kullanıcıdan e-posta, yaş, şifre, şifre tekrar ve kullanıcı sözleşmesi onayı bilgilerini alır.
 
-Currently, two official plugins are available:
+<br />
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🛠 Kullanılan Teknolojiler
 
-## React Compiler
+* **React**: UI oluşturmak için.
+* **Formik**: Form durum yönetimi ve submit işlemleri için.
+* **Yup**: Form validasyonu için.
+  
+<br />
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 📝 Form Alanları ve Validasyon
 
-## Expanding the ESLint configuration
+### Email
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+* Tip: string
+* Zorunlu: Evet
+* Validasyon: Geçerli email formatında olmalı
+
+### Yaş (yas)
+
+* Tip: number
+* Zorunlu: Evet
+* Validasyon: Pozitif sayı olmalı
+
+### Şifre (sifre)
+
+* Tip: string
+* Zorunlu: Evet
+
+### Şifre Tekrar (sifreTekrar)
+
+* Tip: string
+* Zorunlu: Evet
+* Validasyon: Şifre ile eşleşmeli
+
+### Kullanıcı Sözleşmesi (term)
+
+* Tip: boolean
+* Zorunlu: Evet
+* Validasyon: Onaylanmalı (true olmalı)
+
+<br />
+
+## 📌 Notlar
+
+Formik, form durumunu ve submit işlemlerini yönetir. useFormik hook'u ile form değerleri (values), hatalar (errors) ve event handler'lar (handleChange, handleSubmit) sağlanır.
+
+
+* initialValues: Form başlangıç değerleri.
+* validationSchema: Yup şeması ile form doğrulaması.
+* handleSubmit: Form submit edildiğinde çalışacak fonksiyon.
+* handleChange: Input değerleri değiştiğinde formik state'i günceller.
+
+
+<br />
+
+## 📚 Kaynaklar
+
+* [Formik Documentation](https://formik.org/docs/overview)
+* [Yup Documentation](https://www.npmjs.com/package/yup)
+
