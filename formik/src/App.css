@@ -1,0 +1,104 @@
+#root {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     height: auto;
+     min-height: 100vh;
+     background: linear-gradient(135deg, #1c1c1c, #2a2a2a);
+     color: white;
+     font-family: "Poppins", sans-serif;
+}
+
+body {
+     margin: 0;
+     padding: 0;
+}
+
+/* Form kutusu */
+.Form-wrapper {
+     width: 400px;
+     padding: 30px 40px;
+     background-color: #111;
+     border-radius: 15px;
+     box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+     display: flex;
+     flex-direction: column;
+     gap: 20px;
+}
+
+/* Başlık */
+.Form-title {
+     text-align: center;
+     margin-bottom: 10px;
+     font-size: 1.6rem;
+     color: #ffcc70;
+}
+
+/* Input grupları */
+.inputWrapper {
+     display: flex;
+     flex-direction: column;
+     gap: 5px;
+}
+
+.inputWrapper label {
+     font-size: 0.95rem;
+     color: #ccc;
+}
+
+.inputWrapper input {
+     width: 100%;
+     height: 35px;
+     outline: none;
+     border: none;
+     border-bottom: 2px solid #444;
+     background: transparent;
+     transition: 0.3s ease;
+     color: #fff;
+     font-size: 0.95rem;
+}
+
+.inputWrapper input:focus {
+     border-color: #ffcc70;
+}
+
+.submitButton {
+     margin-top: 20px;
+     height: 40px;
+     border: none;
+     border-radius: 8px;
+     background: linear-gradient(90deg, #ffcc70, #ff8a00);
+     color: #111;
+     font-weight: bold;
+     cursor: pointer;
+     transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.submitButton:hover {
+     transform: translateY(-2px);
+     box-shadow: 0 0 10px rgba(255, 204, 112, 0.6);
+}
+
+.checkboxWrapper {
+     flex-direction: row;
+     align-items: center;
+     gap: 10px;
+     margin-left: 20%;
+     margin-top: 10px;
+}
+
+.checkboxWrapper input[type="checkbox"] {
+     width: 18px;
+     height: 18px;
+     accent-color: #ffcc70;
+     /* Checkbox işaret rengi */
+     cursor: pointer;
+}
+
+.checkboxWrapper label {
+     cursor: pointer;
+     color: #ddd;
+     font-size: 0.95rem;
+     user-select: none;
+     /* metin seçilemesin */
+}
